@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Informações Pessoais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1><i class="fas fa-bicycle"></i> Formulário de Inscrição</h1>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome (obrigatório):</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">Email (obrigatório):</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gênero</legend>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="nao_dizer">Prefiro não dizer</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo de Bicicleta</legend>
+            <select id="bicicleta" name="bicicleta">
+                <option value="mtb">MTB</option>
+                <option value="speed">SPEED</option>
+                <option value="gravel">GRAVEL</option>
+                <option value="outra">Outra</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Leitura">
+            <label for="hobby1"> Leitura</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value="Esportes">
+            <label for="hobby2"> Esportes</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value="Viagens">
+            <label for="hobby3"> Viagens</label><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
